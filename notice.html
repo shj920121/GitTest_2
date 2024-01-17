@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공지사항</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;        
+      }
+      body {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          height: 100vh;
+          width: 100%;
+          background-image: url(../project/image/guillaume-galtier-3YrppYQPoCI-unsplash.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+/* header */
+      header{
+            width: 1400px;
+            margin: 0 auto;
+            font-size: 0;
+            padding-top: 5px;
+      }
+        .header_container{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            width: 100%;
+            height: 60px;
+            margin-bottom: 15px;
+            border-bottom: 3px solid white;
+        }
+
+        .header_menu{
+            list-style-type: none;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        .header_menu li{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin-left: 50px;
+            padding-top: 10px;
+        }
+
+        .header_menu a:link, .header_menu a:visited{
+            text-decoration: none;
+            color: white;
+
+            width: 130px;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+
+        .header_btn a:link, .header_btn a:visited{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #left_btn, #right_btn{
+            border-radius: 8px;
+            height: 40px;
+            width: 130px;
+            margin-left: 30px;
+        }
+/* header */
+/* section */
+
+      section {
+        width: 1200px;        
+        margin: 0 auto;
+        align-content: center;        
+      }
+      article {
+        margin-top: 40px;
+      }
+      .title_container {
+        margin-left: 120px;        
+      }
+      .title_container > h2 {
+        color: white;
+        font-size: 3.5em;
+      }
+      .article_1 {
+        display: flex;
+        flex-flow: row nowrap;        
+        justify-content: space-between;
+      }
+      .search_container {
+          width: 300px;
+          height: 80px;
+          border-radius: 10px;
+          margin-right: 80px;
+          background-color: rgb(210, 226, 241);
+      }
+
+      .ct{
+            width: 150px;
+            height: 35px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.08);
+            margin-top: 18.85px;
+            margin-left: 9.63px;
+            text-align: center;
+        }
+
+        .ct_search{
+            width: 122px;
+            height: 31px;
+            padding: 5.538px, 37.4px, 4.692px 28.396px;
+            align-items: center;
+            border-radius: 10px;
+            background: #A95D27;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            color: white;
+        }
+      .context_container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        align-items: center;
+      } 
+      .context {
+          display: flex;
+          flex-flow: column nowrap;
+          padding: 20px;
+          width: 1000px;
+          height: 60px;
+          background-color: rgb(210, 226, 241);
+          border-bottom: 1px solid black;
+      }
+
+      .context > a , .context > p {
+        display: inline-block;
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .context_container > div:first-child {
+        border-radius: 10px 10px 0 0;
+      }
+      .context_container > div:last-child {
+        border-radius: 0 0 10px 10px;
+        border: none;
+      }
+/* section */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+          <ul class="header_menu">
+              <li><a href="#" title="HOME 메뉴">HOME</a></li>
+              <li><a href="#" title="국가정보 메뉴">국가정보</a></li>
+              <li><a href="#" title="공지사항 메뉴">공지사항</a></li>
+              <li><a href="#" title="고객센터 메뉴">고객센터</a></li>
+              <li><a href="#" title="리뷰 메뉴">리뷰</a></li>
+              <li><a href="#" title="마이페이지 메뉴">마이페이지</a></li>
+          </ul>
+          <div class="header_btn">
+              <button id="left_btn"><a href="#">로그인</a></button>
+              <button id="right_btn"><a href="#">회원가입</a></button>
+          </div>
+     </div>  
+  </header>
+    <section>
+      <article class="article_1">
+        <div class="title_container">
+          <h2>공지 사항</h2>
+        </div>
+        <div class="search_container">
+          <form class="frm_search">
+            <div class="search_container">
+                <input type="text" name="country" class="ct" placeholder="여행을 떠날 곳 입력">
+                <button type="submit" class="ct_search">search</button>
+            </div>
+        </form>
+        </div>
+      </article>
+
+      <article class="article_2">
+        <div class="context_container">
+          <div class="context">
+            <a href=""><p>제목</p></a>
+            <a href=""><p>내용</p></a>          
+          </div>
+          <div class="context">
+            <a href=""><p>제목</p></a>
+            <a href=""><p>내용</p></a> 
+          </div>
+          <div class="context">
+            <a href=""><p>제목</p></a>
+            <a href=""><p>내용</p></a>
+          </div> 
+          <div class="context">
+            <a href=""><p>제목</p></a>
+            <a href=""><p>내용</p></a> 
+          </div>
+          <div class="context">
+            <a href=""><p>제목</p></a>
+            <a href=""><p>내용</p></a>
+          </div>
+          <div class="context">
+            <a href=""><p>제목</p></a>
+            <a href=""><p>내용</p></a> 
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </body>
+</html>
